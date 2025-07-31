@@ -1,0 +1,239 @@
+import { Link } from 'react-router-dom';
+import { ArrowRight, Award, Users, Factory, CheckCircle, TrendingUp, Globe } from 'lucide-react';
+
+const Home = () => {
+  const features = [
+    {
+      icon: Award,
+      title: "ISO 9001 Certified",
+      description: "Quality management system certified for consistent excellence in manufacturing"
+    },
+    {
+      icon: Factory,
+      title: "Advanced Manufacturing",
+      description: "State-of-the-art pressing machines, lathe & drilling equipment for precision manufacturing"
+    },
+    {
+      icon: Users,
+      title: "Expert Team",
+      description: "Experienced professionals with deep expertise in rubber and seal manufacturing"
+    },
+    {
+      icon: CheckCircle,
+      title: "Quality Assurance",
+      description: "In-house testing lab ensuring every product meets the highest quality standards"
+    }
+  ];
+
+  const stats = [
+    { number: "8+", label: "Years Experience" },
+    { number: "100+", label: "Happy Customers" },
+    { number: "1000+", label: "Products Delivered" },
+    { number: "99.8%", label: "Quality Rate" },
+  ];
+
+  const products = [
+    {
+      title: "Bonded Seals",
+      description: "High-performance bonded seals for various industrial applications",
+      image: "/bonded seals.jpg"
+    },
+    {
+      title: "Oil Seals",
+      description: "Durable oil seals designed for optimal sealing performance",
+      image: "/oil seal.jpeg"
+    },
+    {
+      title: "O-Rings",
+      description: "Precision O-rings for diesel tanks, hyva, and radiator applications",
+      image: "/o rings.jpg"
+    },
+    {
+      title: "Shell Components",
+      description: "L, C, and Z type shell components manufactured to exact specifications",
+      image: "/Shell Components.png"
+    }
+  ];
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative hero-gradient min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <div className="max-w-5xl mx-auto">
+            <h1 className="hero-text fade-in">
+              Dev Press Tools
+            </h1>
+            <p className="hero-subtitle fade-in fade-in-delay-1">
+              Certified manufacturer of bonded seals, oil seals, O-rings, rubber parts, 
+              and shell components. Precision engineering meets quality excellence in Solapur, India.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center fade-in fade-in-delay-2">
+              <Link to="/products" className="btn-primary pulse-glow">
+                Explore Products
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+              <Link to="/contact" className="btn-outline">
+                Get Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+        
+        {/* Floating elements for visual appeal */}
+        <div className="absolute top-20 left-10 w-20 h-20 bg-accent/20 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-pulse delay-700"></div>
+        <div className="absolute top-1/2 right-20 w-16 h-16 bg-accent/30 rounded-full blur-lg animate-pulse delay-1000"></div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-gradient-to-r from-primary to-primary-hover">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+                <div className="text-4xl md:text-5xl font-bold text-primary-foreground mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-primary-foreground/90 font-medium">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Company Introduction */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="section-header fade-in">
+              Precision Manufacturing Excellence
+            </h2>
+            <p className="section-subtitle fade-in fade-in-delay-1">
+              At Dev Press Tools, we specialize in manufacturing high-quality seals, O-rings, 
+              and rubber components that meet the most demanding industrial standards. Our commitment 
+              to precision and quality has made us a trusted partner for businesses across India.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 slide-in-left">
+              <h3 className="text-2xl font-bold text-foreground mb-6">
+                Why Choose Dev Press Tools?
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">ISO 9001 Certified Quality</h4>
+                    <p className="text-muted-foreground">Internationally recognized quality management system</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Advanced Manufacturing Setup</h4>
+                    <p className="text-muted-foreground">State-of-the-art pressing, lathe, and molding machines</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">In-house Testing Lab</h4>
+                    <p className="text-muted-foreground">Comprehensive quality testing for every product</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">MSME ZED Bronze Certified</h4>
+                    <p className="text-muted-foreground">Recognized for sustainable manufacturing practices</p>
+                  </div>
+                </div>
+              </div>
+              <Link to="/about" className="btn-secondary inline-flex items-center">
+                Learn More About Us
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6 slide-in-right">
+              {features.map((feature, index) => (
+                <div key={index} className="card-feature scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <feature.icon className="h-12 w-12 text-primary mb-4" />
+                  <h4 className="font-semibold text-foreground mb-2">{feature.title}</h4>
+                  <p className="text-muted-foreground text-sm">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Showcase */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="section-header fade-in">
+              Our Product Range
+            </h2>
+            <p className="section-subtitle fade-in fade-in-delay-1">
+              Comprehensive range of high-quality seals and rubber components for diverse industrial applications
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {products.map((product, index) => (
+              <div key={index} className="card-industrial group fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <img src={product.image} alt={product.title} className="w-full h-40 object-contain rounded mb-4 bg-white shadow" />
+                <h3 className="text-xl font-semibold text-foreground mb-2">{product.title}</h3>
+                <p className="text-muted-foreground mb-4">{product.description}</p>
+                <Link 
+                  to="/products" 
+                  className="text-primary hover:text-primary-hover font-medium inline-flex items-center group-hover:gap-2 transition-all"
+                >
+                  Learn More
+                  <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link to="/products" className="btn-primary">
+              View All Products
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-hero">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-primary-foreground mb-6 fade-in">
+              Ready to Experience Quality Manufacturing?
+            </h2>
+            <p className="text-xl text-primary-foreground/90 mb-8 fade-in fade-in-delay-1">
+              Get in touch with our team to discuss your requirements and receive a customized quote 
+              for our precision-engineered products.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center fade-in fade-in-delay-2">
+              <Link to="/contact" className="btn-primary bg-accent hover:bg-accent-hover text-accent-foreground">
+                Get Quote Now
+              </Link>
+              <Link to="/services" className="btn-outline border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-foreground">
+                Our Services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
