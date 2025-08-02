@@ -36,10 +36,10 @@ const Header = () => {
       <div className="bg-primary text-primary-foreground py-2 px-4">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm space-y-1 sm:space-y-0">
           <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4">
-            <div className="flex items-center space-x-2">
+            {/* <div className="flex items-center space-x-2">
               <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
               <span className="text-xs sm:text-sm">+91 9421026482</span>
-            </div>
+            </div> */}
             <div className="flex items-center space-x-2">
               <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
               <span className="text-xs sm:text-sm">devpresstools@gmail.com</span>
@@ -57,7 +57,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 sm:space-x-3">
             <img
-              src="/companylogo.png"
+              src="/Dev Press Tool Logo.jpg"
               alt="Dev Press Tools Logo"
               className="h-12 w-auto mr-2 object-contain align-middle drop-shadow-sm"
             />

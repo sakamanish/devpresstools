@@ -7,21 +7,21 @@ const Products = () => {
       category: "Bonded Seals",
       description: "High-performance bonded seals combining metal and rubber for superior sealing solutions",
       applications: ["Automotive", "Hydraulic Systems", "Industrial Machinery", "Aerospace"],
-      sizes: "M6 to M64",
-      materials: ["NBR", "EPDM", "Viton", "Silicone"],
+      sizes: "M4 to M30",
+      materials: ["NBR", "Viton", "Silicone"],
       features: [
         "Self-centering design",
         "Zero face seal leakage",
         "High pressure resistance",
         "Temperature range: -40°C to +200°C"
       ],
-      image: "/bonded seals.jpg"
+      image: "/Bonded Seals.jpeg"
     },
     {
       category: "Oil Seals",
       description: "Precision oil seals designed for rotating shaft applications with excellent sealing performance",
       applications: ["Automotive Engines", "Gearboxes", "Pumps", "Compressors"],
-      sizes: "15mm to 500mm shaft diameter",
+      sizes: "10mm to 200mm shaft diameter",
       materials: ["NBR", "FKM", "PTFE", "ACM"],
       features: [
         "Low friction design",
@@ -29,28 +29,28 @@ const Products = () => {
         "Multiple lip configurations",
         "Wide temperature range"
       ],
-      image: "/oil seal.jpeg"
+      image: "/Oil Seals.jpeg"
     },
     {
       category: "O-Rings",
       description: "Comprehensive range of O-rings for static and dynamic sealing applications",
       applications: ["Diesel Tanks", "Hyva Systems", "Radiators", "Hydraulic Cylinders"],
-      sizes: "AS568 standard and metric sizes",
-      materials: ["NBR", "EPDM", "Viton", "Silicone", "HNBR"],
+      sizes: "As per customer requirement",
+      materials: ["NBR", "EPDM", "Viton", "Silicone", "HNBR", "ACM"],
       features: [
         "Excellent chemical resistance",
         "Wide temperature range",
         "Low compression set",
         "Custom formulations available"
       ],
-      image: "/o rings.jpg"
+      image: "/O Ring Snaps.jpg"
     },
     {
       category: "Rubber Pads",
       description: "Durable rubber pads for vibration damping and load distribution applications",
       applications: ["Industrial Equipment", "Construction", "Automotive", "Railway"],
       sizes: "Custom sizes available",
-      materials: ["Natural Rubber", "SBR", "EPDM", "Neoprene"],
+      materials: ["NBR", "NBR+PVC", "EPDM", "Neoprene"],
       features: [
         "Excellent vibration isolation",
         "High load bearing capacity",
@@ -60,25 +60,25 @@ const Products = () => {
       image: "/rubber pads.jpg"
     },
     {
-      category: "Sealing Washers",
-      description: "Specialized sealing washers for transformer and electrical applications",
+      category: "Porcelain Bushing Gasket",
+      description: "Specialized porcelain bushing gasket for transformer and electrical applications",
       applications: ["Transformers", "Electrical Equipment", "Oil-filled systems", "Switchgear"],
       sizes: "Standard and custom sizes",
-      materials: ["NBR", "EPDM", "Silicone"],
+      materials: ["NBR", "Vitol", "Silicone"],
       features: [
         "Electrical insulation properties",
         "Oil and chemical resistance",
         "High dielectric strength",
         "Temperature stability"
       ],
-      image: "/sealing washers.jpg"
+      image: "/Porcelain Bushing Gasket All Sizes.jpg"
     },
     {
-      category: "Shell Components",
+      category: "Metal Shell Components",
       description: "Precision-manufactured shell components in L, C, and Z configurations",
       applications: ["Industrial Assembly", "Machinery", "Automotive", "Construction"],
       sizes: "Custom manufactured to specifications",
-      materials: ["Steel", "Stainless Steel", "Aluminum"],
+      materials: ["Steel", "Stainless Steel", "MS, CR sheet , HR"],
       features: [
         "Precise dimensional accuracy",
         "Multiple configuration options",
@@ -86,6 +86,20 @@ const Products = () => {
         "Quality assured manufacturing"
       ],
       image: "/Shell Components.png"
+    },
+    {
+      category: "Gaskets",
+      description: "High-performance gaskets for sealing applications in various industrial environments",
+      applications: ["Piping Systems", "Flanges", "Heat Exchangers", "Pressure Vessels"],
+      sizes: "Custom sizes and shapes",
+      materials: ["NBR", "Silicone", "PTFE", "Graphite"],
+      features: [
+        "Excellent compression resistance",
+        "Chemical and temperature resistance",
+        "Custom die-cutting available",
+        "Long service life"
+      ],
+      image: "/Gaskets.jpeg"
     }
   ];
 
@@ -175,7 +189,7 @@ const Products = () => {
       </section>
 
       {/* Size Chart Section for Bonded Seals */}
-      <section className="py-20 bg-muted/30">
+      {/* <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -229,7 +243,7 @@ const Products = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Quality Assurance */}
       <section className="py-20 bg-background">

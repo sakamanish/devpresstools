@@ -5,47 +5,50 @@ const Customers = () => {
     {
       name: "Fortune Engineering",
       sector: "Engineering",
-      description: "Leading engineering solutions provider"
+      description: "Leading engineering solutions provider",
+      logo: "/Fortune Engineering.png"
     },
     {
-      name: "Indo Farm",
+      name: "Indo Farm Equipment Ltd",
       sector: "Agriculture",
-      description: "Agricultural equipment manufacturer"
+      description: "Agricultural equipment manufacturer",
+      logo: "/Indo Farm Equipment Ltd.png"
     },
     {
       name: "Dali & Samir Engineering Pvt. Ltd.",
       sector: "Engineering",
-      description: "Fuel-filling component requirements specialist"
+      description: "Fuel-filling component requirements specialist",
+      logo: "/Dali and Samir.png"
     },
     {
-      name: "Voltamp Vadodara",
+      name: "Voltamp Transformers Limited",
       sector: "Power",
-      description: "The Power of Industry - Electrical equipment manufacturer"
+      description: "The Power of Industry - Electrical equipment manufacturer",
+      logo: "/Voltamp Transformers Limited.jpg"
     },
     {
       name: "S.M. Auto",
       sector: "Automotive",
-      description: "Automotive component manufacturer"
+      description: "Automotive component manufacturer",
+      logo: "/S M Auto.png"
     },
     {
-      name: "Hydrolift",
+      name: "Hydrolift Cranes",
       sector: "Industrial",
-      description: "Born to Lift - Hydraulic equipment specialist"
+      description: "Born to Lift - Hydraulic equipment specialist",
+      logo: "/Hydrolift Cranes.png"
     },
     {
-      name: "Kross Sealing Solutions",
+      name: "Kross International",
       sector: "Sealing",
-      description: "Serving Excellence since 1986"
+      description: "Serving Excellence since 1986",
+      logo: "/Kross International.png"
     },
     {
       name: "Lumina Enterprises",
       sector: "Electrical",
-      description: "Electrical equipment and safety solutions"
-    },
-    {
-      name: "Artfab",
-      sector: "Manufacturing",
-      description: "Manufacturing solutions provider"
+      description: "Electrical equipment and safety solutions",
+      logo: "/Lumina Enterprises.png"
     }
   ];
 
@@ -53,32 +56,38 @@ const Customers = () => {
     {
       name: "Sonalika International",
       sector: "Automotive",
-      count: "Sonalika International"
+      count: "Sonalika International",
+      logo: "/Sonalika ITL Tractor.jpeg"
     },
     {
       name: "Punch Powertrain",
       sector: "Automotive",
-      count: "Punch Powertrain"
+      count: "Punch Powertrain",
+      logo: "/Punch Power train.jpeg"
     },
     {
       name: "HYVA",
       sector: "Industrial",
-      count: "HYVA"
+      count: "HYVA",
+      logo: "/Hyva.png"
     },
     {
       name: "TATA MOTORS",
       sector: "Automotive",
-      count: "TATA MOTORS"
+      count: "TATA MOTORS",
+      logo: "/Tata Motors.png"
     },
     {
       name: "ESCORTS",
       sector: "Agriculture",
-      count: "ESCORTS"
+      count: "ESCORTS",
+      logo: "/Escorts.png"
     },
     {
       name: "TAFE",
       sector: "Agriculture",
-      count: "TAFE"
+      count: "TAFE",
+      logo: "/Tafe.png"
     }
   ];
 
@@ -147,11 +156,11 @@ const Customers = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center fade-in">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary mb-2">100+</div>
               <div className="text-muted-foreground">Total Customers</div>
             </div>
             <div className="text-center fade-in fade-in-delay-1">
-              <div className="text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-4xl font-bold text-primary mb-2">8+</div>
               <div className="text-muted-foreground">Years Experience</div>
             </div>
             <div className="text-center fade-in fade-in-delay-2">
@@ -204,8 +213,12 @@ const Customers = () => {
             {directClients.map((client, index) => (
               <div key={index} className="card-industrial fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-lg flex items-center justify-center">
-                    <Building2 className="h-8 w-8 text-primary-foreground" />
+                  <div className="w-38 h-24 bg-white rounded-lg flex items-center justify-center p-3 shadow-sm">
+                    <img 
+                      src={client.logo} 
+                      alt={client.name} 
+                      className="max-w-full max-h-full object-contain"
+                    />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-foreground">{client.name}</h3>
@@ -232,7 +245,13 @@ const Customers = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {tier2Clients.map((client, index) => (
               <div key={index} className="card-feature text-center fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="text-3xl font-bold text-primary mb-2">{client.count}</div>
+                <div className="w-28 h-28 bg-white rounded-lg flex items-center justify-center p-3 shadow-sm mx-auto mb-4">
+                  <img 
+                    src={client.logo} 
+                    alt={client.name} 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">{client.name}</h3>
                 <p className="text-muted-foreground">{client.sector} Sector</p>
               </div>

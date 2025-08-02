@@ -65,7 +65,7 @@ const About = () => {
                 <p>
                   Over the years, we have evolved from a small manufacturing unit to a 
                   comprehensive solution provider for bonded seals, oil seals, O-rings, 
-                  rubber parts, and shell components. Our commitment to quality and innovation 
+                  rubber parts,porcelan bushing gas kits, and Metal shell components. Our commitment to quality and innovation 
                   has earned us the trust of customers across various industries.
                 </p>
                 <p>

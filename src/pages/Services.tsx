@@ -37,7 +37,7 @@ const Services = () => {
       image: "/Rubber Molding and Mixing.jpg"
     },
     {
-      title: "In-house Testing Laboratory",
+      title: "In-house Rubber Testing Laboratory",
       description: "Comprehensive quality testing ensuring product reliability and performance",
       features: [
         "Material hardness testing",
@@ -45,7 +45,7 @@ const Services = () => {
         "Chemical resistance testing",
         "Dimensional verification"
       ],
-      image: "/In-house Testing Laboratory.jpeg"
+      image: "/In-house Testing Laboratory.jpg"
     },
     {
       title: "Surface Treatment Processes",

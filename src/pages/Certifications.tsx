@@ -145,15 +145,11 @@ const Certifications = () => {
                       </ul>
                     </div>
                     
-                    <div className="flex items-center justify-between p-4 bg-muted/30 rounded-lg">
+                    <div className="p-4 bg-muted/30 rounded-lg">
                       <div>
                         <p className="text-sm text-muted-foreground">Certificate Number</p>
                         <p className="font-mono text-foreground">{cert.certificateNumber}</p>
                       </div>
-                      <button className="btn-outline">
-                        <Download className="h-4 w-4 mr-2" />
-                        Download
-                      </button>
                     </div>
                   </div>
                 </div>

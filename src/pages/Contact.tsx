@@ -270,8 +270,8 @@ const Contact = () => {
                           Pot No. 50,
                             Avinash Nagar, Akkalkot Road, <br />
                             M.I.D.C, SOLAPUR <br />
-                           Maharashtra - 413 006<br />
-                          India
+                           Maharashtra India- 413 006<br />
+                          
                         </p>
                       </div>
                     </div>
@@ -281,9 +281,9 @@ const Contact = () => {
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">Phone</h4>
                         <p className="text-muted-foreground">
-                          Primary: +91 9923990111<br />
-                          Secondary: +91 9421026482<br />
-                          Office: +91 9665389222
+                           +91 9923990111<br />
+                           +91 9421026482<br />
+                         
                         </p>
                       </div>
                     </div>
@@ -294,8 +294,8 @@ const Contact = () => {
                         <h4 className="font-semibold text-foreground mb-1">Email</h4>
                         <p className="text-muted-foreground">
                           General: devpresstools@gmail.com<br />
-                          Sales: devpresstools@gmail.com<br />
-                          Support: devpresstools@gmail.com
+                          {/* Sales: devpresstools@gmail.com<br />
+                          Support: devpresstools@gmail.com */}
                         </p>
                       </div>
                     </div>

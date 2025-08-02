@@ -11,7 +11,7 @@ const Home = () => {
     {
       icon: Factory,
       title: "Advanced Manufacturing",
-      description: "State-of-the-art pressing machines, lathe & drilling equipment for precision manufacturing"
+      description: "State-of-the-art pressing, lathe,rubber mixing, surface treatment,rubber molding"
     },
     {
       icon: Users,
@@ -36,20 +36,20 @@ const Home = () => {
     {
       title: "Bonded Seals",
       description: "High-performance bonded seals for various industrial applications",
-      image: "/bonded seals.jpg"
+      image: "/Bonded Seals.jpeg"
     },
     {
       title: "Oil Seals",
       description: "Durable oil seals designed for optimal sealing performance",
-      image: "/oil seal.jpeg"
+      image: "/Oil Seals.jpeg"
     },
     {
       title: "O-Rings",
       description: "Precision O-rings for diesel tanks, hyva, and radiator applications",
-      image: "/o rings.jpg"
+      image: "/O Ring Snaps.jpg"
     },
     {
-      title: "Shell Components",
+      title: "Metal Shell Components",
       description: "L, C, and Z type shell components manufactured to exact specifications",
       image: "/Shell Components.png"
     }
@@ -59,6 +59,16 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative hero-gradient min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image with Light Opaque Effect */}
+        <div className="absolute inset-0">
+          <img 
+            src="/In-house Testing Laboratory.jpg" 
+            alt="In-house Testing Lab" 
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/40 to-primary/20"></div>
+        </div>
+        
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-5xl mx-auto">
@@ -136,13 +146,13 @@ const Home = () => {
                   <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-foreground">Advanced Manufacturing Setup</h4>
-                    <p className="text-muted-foreground">State-of-the-art pressing, lathe, and molding machines</p>
+                    <p className="text-muted-foreground">State-of-the-art pressing, lathe,rubber mixing, surface treatment, rubber molding </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <CheckCircle className="h-6 w-6 text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-foreground">In-house Testing Lab</h4>
+                    <h4 className="font-semibold text-foreground">In-house Rubber Testing Lab</h4>
                     <p className="text-muted-foreground">Comprehensive quality testing for every product</p>
                   </div>
                 </div>

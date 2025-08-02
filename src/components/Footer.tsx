@@ -28,8 +28,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">DPT</span>
+              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center p-1">
+                <img 
+                  src="/Dev Press Tool Logo.jpg" 
+                  alt="Dev Press Tools Logo" 
+                  className="max-w-full max-h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Dev Press Tools</h3>
@@ -37,8 +41,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-background/90 leading-relaxed">
-              A certified manufacturer of bonded seals, oil seals, O-rings, rubber parts, 
-              and shell components, committed to precision engineering and quality excellence.
+              A certified manufacturer of bonded seals, oil seals, O-rings, rubber parts, porcelain bushing gaskets,
+              and Metal shell components, committed to precision engineering and quality excellence.
             </p>
             <div className="flex items-center space-x-2">
               <Award className="h-5 w-5 text-accent" />
@@ -82,9 +86,11 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-background/90">
-                    Dev Press Tools<br />
-                    Industrial Area, Solapur<br />
-                    Maharashtra, India - 413255
+                  Dev Press Tools<br />
+                          Pot No. 50,
+                            Avinash Nagar, Akkalkot  <br />
+                            Road, M.I.D.C, SOLAPUR <br />
+                           Maharashtra India- 413 006<br />
                   </p>
                 </div>
               </div>
@@ -92,7 +98,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent" />
                 <div>
-                  <p className="text-background/90">+91 9421026482</p>
+                  <p className="text-background/90">+91 9923990111</p>
                   <p className="text-background/90">+91 9421026482</p>
                 </div>
               </div>
@@ -110,8 +116,8 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Clock className="h-5 w-5 text-accent" />
                 <div>
-                  <p className="text-background/90">Mon - Sat: 9:00 AM - 6:00 PM</p>
-                  <p className="text-background/90">Sunday: Closed</p>
+                  <p className="text-background/90">Thursday-Tuesday: 9:00 AM-6:00 PM</p>
+                  <p className="text-background/90">Wednesday: Closed</p>
                 </div>
               </div>
             </div>
