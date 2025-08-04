@@ -54,7 +54,9 @@ const Services = () => {
         "Chemical surface treatment",
         "Protective coating application",
         "Anti-corrosion treatments",
-        "Surface roughness optimization"
+        "Surface roughness optimization",
+        "7 Tank Process",
+        "Electroplating Facility available"
       ],
       image: "/updated images/Surface Treatment Process.jpg"
     }

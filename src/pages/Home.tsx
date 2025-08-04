@@ -1,7 +1,33 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Award, Users, Factory, CheckCircle, TrendingUp, Globe } from 'lucide-react';
+import { ArrowRight, Award, Users, Factory, CheckCircle, TrendingUp, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const carouselImages = [
+    "/for scrolling/Moulding_Machines.jpg",
+    "/for scrolling/Dev_Press_Tools_Company.jpg", 
+    "/for scrolling/In-house Testing Laboratory.jpg"
+  ];
+
+  // Auto-slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+  };
+
   const features = [
     {
       icon: Award,
@@ -59,13 +85,18 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative hero-gradient min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image with Light Opaque Effect */}
+        {/* Carousel Background */}
         <div className="absolute inset-0">
-          <img 
-            src="/In-house Testing Laboratory.jpg" 
-            alt="In-house Testing Lab" 
-            className="w-full h-full object-cover opacity-70"
-          />
+          {carouselImages.map((image, index) => (
+            <img 
+              key={index}
+              src={image} 
+              alt={`Slide ${index + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentSlide ? 'opacity-70' : 'opacity-0'
+              }`}
+            />
+          ))}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-primary/40 to-primary/20"></div>
         </div>
         
@@ -91,6 +122,33 @@ const Home = () => {
           </div>
         </div>
         
+        {/* Carousel Navigation */}
+        <button 
+          onClick={prevSlide}
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300"
+        >
+          <ChevronLeft className="h-6 w-6" />
+        </button>
+        <button 
+          onClick={nextSlide}
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300"
+        >
+          <ChevronRight className="h-6 w-6" />
+        </button>
+
+        {/* Carousel Indicators */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
+          {carouselImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentSlide ? 'bg-white' : 'bg-white/50'
+              }`}
+            />
+          ))}
+        </div>
+
         {/* Floating elements for visual appeal */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-accent/20 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-pulse delay-700"></div>
