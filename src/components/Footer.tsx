@@ -19,6 +19,7 @@ const Footer = () => {
     'Rubber Pads',
     'Sealing Washers',
     'Shell Components',
+    'Porcelain Bushing Gaskets',
   ];
 
   return (

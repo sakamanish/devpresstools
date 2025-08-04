@@ -267,11 +267,10 @@ const Contact = () => {
                         <h4 className="font-semibold text-foreground mb-1">Address</h4>
                         <p className="text-muted-foreground">
                           Dev Press Tools<br />
-                          Pot No. 50,
-                            Avinash Nagar, Akkalkot Road, <br />
-                            M.I.D.C, SOLAPUR <br />
-                           Maharashtra India- 413 006<br />
-                          
+                          Serial No: 177, Avinash Nagar,<br />
+                          Plot No: 50, Akkalkot Road, MIDC,<br />
+                          Solapur, Maharashtra 413006<br />
+                          <span className="text-xs text-foreground/70">Coordinates: 17.65755° N, 75.94880° E</span>
                         </p>
                       </div>
                     </div>
@@ -305,8 +304,8 @@ const Contact = () => {
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">Business Hours</h4>
                         <p className="text-muted-foreground">
-                          Monday - Saturday: 9:00 AM - 6:00 PM<br />
-                          Sunday: Closed<br />
+                          Thursday - Tuesday: 9:00 AM - 6:00 PM<br />
+                          Wednesday: Closed<br />
                           Emergency Support: 24/7
                         </p>
                       </div>
@@ -318,7 +317,7 @@ const Contact = () => {
                 <div className="card-industrial">
                   <h4 className="font-semibold text-foreground mb-4">Location</h4>
                   <a 
-                    href="https://maps.google.com/?q=Dev+Press+Tools+Pot+No.+50+Avinash+Nagar+Akkalkot+Road+M.I.D.C+SOLAPUR+Maharashtra+413006+India" 
+                    href="https://maps.google.com/?q=17.65755,75.94880" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="block h-64 bg-gradient-secondary rounded-lg flex items-center justify-center hover:bg-gradient-primary transition-all duration-300 cursor-pointer group"

@@ -6,7 +6,7 @@ const Certifications = () => {
       name: "ISO 9001:2015",
       type: "Quality Management System",
       issuedBy: "International Organization for Standardization",
-      validUntil: "December 2027",
+      //validUntil: "December 2027",
       description: "Internationally recognized standard for quality management systems, ensuring consistent quality in manufacturing processes and customer satisfaction.",
       benefits: [
         "Consistent quality in all manufacturing processes",
@@ -20,7 +20,7 @@ const Certifications = () => {
       name: "MSME ZED Bronze",
       type: "Zero Effect Zero Defect Certification",
       issuedBy: "Ministry of MSME, Government of India",
-      validUntil: "March 2026",
+      //validUntil: "March 2026",
       description: "Government of India certification recognizing our commitment to zero waste, zero pollution, and zero defect manufacturing practices.",
       benefits: [
         "Zero waste manufacturing processes",
@@ -127,10 +127,10 @@ const Certifications = () => {
                         <h4 className="font-semibold text-foreground mb-2">Issued By:</h4>
                         <p className="text-muted-foreground text-sm">{cert.issuedBy}</p>
                       </div>
-                      <div>
+                      {/* <div>
                         <h4 className="font-semibold text-foreground mb-2">Valid Until:</h4>
                         <p className="text-muted-foreground text-sm">{cert.validUntil}</p>
-                      </div>
+                      </div> */}
                     </div>
                     
                     <div className="mb-6">
@@ -178,10 +178,10 @@ const Certifications = () => {
                       <p className="text-muted-foreground text-sm">Certificate Preview</p>
                     </div>
                     <div className="flex items-center space-x-4 text-sm text-muted-foreground mt-4">
-                      <div className="flex items-center space-x-2">
+                      {/* <div className="flex items-center space-x-2">
                         <Calendar className="h-4 w-4" />
                         <span>Valid until {cert.validUntil}</span>
-                      </div>
+                      </div> */}
                       <div className="flex items-center space-x-2">
                         <Shield className="h-4 w-4" />
                         <span>Verified</span>

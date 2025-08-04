@@ -114,25 +114,25 @@ const Customers = () => {
       icon: Building2,
       name: "Automotive",
       description: "OEMs and Tier-1 suppliers",
-      count: "150+"
+      count: "40+"
     },
     {
       icon: TrendingUp,
       name: "Industrial",
       description: "Machinery and equipment manufacturers",
-      count: "120+"
+      count: "30+"
     },
     {
       icon: Building2,
       name: "Construction",
       description: "Heavy equipment and infrastructure",
-      count: "80+"
+      count: "10+"
     },
     {
       icon: Award,
       name: "Power & Energy",
       description: "Power generation and transmission",
-      count: "60+"
+      count: "50+"
     }
   ];
 

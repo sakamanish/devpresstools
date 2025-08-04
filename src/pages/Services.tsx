@@ -12,7 +12,7 @@ const Services = () => {
         "Multi-stage pressing capabilities",
         "Quality control at every stage"
       ],
-      image: "/pressing machine.jpg"
+      image: "/updated images/Press_Shop.jpg"
     },
     {
       title: "Lathe & Drilling Machine Setup",
@@ -23,7 +23,7 @@ const Services = () => {
         "Surface finishing to exact specifications",
         "Dimensional accuracy up to ±0.01mm"
       ],
-      image: "/Lathe & Drilling Machine.avif"
+      image: "/updated images/Rolling_Machine.jpg"
     },
     {
       title: "Rubber Molding and Mixing",
@@ -34,7 +34,7 @@ const Services = () => {
         "Vulcanization process control",
         "Material property optimization"
       ],
-      image: "/Rubber Molding and Mixing.jpg"
+      image: "/updated images/Moulding_Machines.jpg"
     },
     {
       title: "In-house Rubber Testing Laboratory",
@@ -45,7 +45,7 @@ const Services = () => {
         "Chemical resistance testing",
         "Dimensional verification"
       ],
-      image: "/In-house Testing Laboratory.jpg"
+      image: "/updated images/Rubber_Testing_Lab.jpg"
     },
     {
       title: "Surface Treatment Processes",
@@ -56,7 +56,7 @@ const Services = () => {
         "Anti-corrosion treatments",
         "Surface roughness optimization"
       ],
-      image: "/Surface Treatment Processes.webp"
+      image: "/updated images/Surface Treatment Process.jpg"
     }
   ];
 

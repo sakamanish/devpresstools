@@ -57,7 +57,7 @@ const Products = () => {
         "Weather resistant",
         "Long service life"
       ],
-      image: "/rubber pads.jpg"
+      image: "/updated images/Rubber_Parts.jpg"
     },
     {
       category: "Porcelain Bushing Gasket",
@@ -85,7 +85,7 @@ const Products = () => {
         "Surface treatment available",
         "Quality assured manufacturing"
       ],
-      image: "/Shell Components.png"
+      image: "/metal shell.jpg"
     },
     {
       category: "Gaskets",

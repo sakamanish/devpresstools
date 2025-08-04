@@ -51,7 +51,7 @@ const Home = () => {
     {
       title: "Metal Shell Components",
       description: "L, C, and Z type shell components manufactured to exact specifications",
-      image: "/Shell Components.png"
+      image: "/metal shell.jpg"
     }
   ];
 
