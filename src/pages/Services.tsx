@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Services = () => {
   const services = [
     {
-      title: "Pressing Machine Operations",
+      title: "Power Press Machine",
       description: "Advanced hydraulic and mechanical pressing machines for precision forming of seals and gaskets",
       features: [
         "High-pressure hydraulic presses up to 500 tons",
@@ -23,26 +23,45 @@ const Services = () => {
         "Surface finishing to exact specifications",
         "Dimensional accuracy up to ±0.01mm"
       ],
-      image: "/updated images/Rolling_Machine.jpg"
+      image: "/updated images/lathe.jpg"
     },
     {
-      title: "Rubber Molding and Mixing",
-      description: "Complete rubber processing from raw material to finished products",
+      title: "Rubber Mixing",
+      description: "Precision mixing of raw rubber materials to achieve desired compound properties",
       features: [
-        "Custom compound formulation",
-        "Injection and compression molding",
-        "Vulcanization process control",
-        "Material property optimization"
+        "Own Compound Formulation",
+        "Accurate raw material weighing and batching",
+        "Banbury/internal mixing and open mill mixing",
+        "Consistent dispersion of fillers and additives",
+        "Temperature and shear control for uniform mixing"
+      ],
+      image: "/updated images/mixing.jpg"
+    },
+    {
+      title: "Rubber Molding",
+      description: "Forming rubber into final shapes using precision molds and controlled processes",
+      features: [
+        
+        "Injection, compression, and transfer molding techniques",
+        "Dimensional accuracy with steel/aluminum molds",
+        "Controlled vulcanization for durability",
+        "Deflashing and finishing for final product quality"
       ],
       image: "/updated images/Moulding_Machines.jpg"
     },
+    
     {
       title: "In-house Rubber Testing Laboratory",
       description: "Comprehensive quality testing ensuring product reliability and performance",
       features: [
-        "Material hardness testing",
-        "Tensile strength analysis",
-        "Chemical resistance testing",
+        "Material hardness Test",
+        "Tensile & Elongation Strength analysis",
+        "Compression Set Test",
+        "Ash Content",
+        "Metal to Rubber Bonding Test",
+        "Specific Gravity",
+        "Heat and Oil Aging",
+        "Chemical resistance Test",
         "Dimensional verification"
       ],
       image: "/updated images/Rubber_Testing_Lab.jpg"
