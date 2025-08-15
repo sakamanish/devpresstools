@@ -35,6 +35,13 @@ const Contact = () => {
       description: "General management and administration"
     },
     {
+      name: "Mr. Rakesh R Yannam",
+      position: "General Manager",
+      phone: "09421026482",
+      email: "devpresstools@gmail.com",
+      description: "General management and administration"
+    },
+    {
       name: "Mr. Satish C Changle",
       position: "Quality & Rubber Technician",
       phone: "09665389222",
