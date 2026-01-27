@@ -49,7 +49,25 @@ const Customers = () => {
       sector: "Electrical",
       description: "Electrical equipment and safety solutions",
       logo: "/Lumina Enterprises.png"
-    }
+    },
+    {
+      name: "Artfab",
+      sector: "Engineering",
+      description: "Innovative solutions for industrial fabrics",
+      logo: "/Artfab Customer.png"
+    },
+    {
+      name: "Lamco Transformer Pvt Ltd",
+      sector: "Power",
+      description: "Reliable transformer manufacturing and solutions",
+      logo: "/Lamco Transformer Pvt Ltd.png"
+    },
+    {
+      name: "Trans Mech System",
+      sector: "Industrial Automation",
+      description: "Advanced automation and mechanical systems provider",
+      logo: "/Trans-Mech System.png"
+    },
   ];
 
   const tier2Clients = [

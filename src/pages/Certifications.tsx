@@ -3,6 +3,24 @@ import { Award, Shield, CheckCircle, Download, Calendar, Building } from 'lucide
 const Certifications = () => {
   const certifications = [
     {
+      name: "MSME ZED Gold",
+      type: "Zero Defect Zero Effect (ZED) Gold Certification",
+      issuedBy: "Ministry of MSME, Government of India",
+      description: "MSME Sustainable (ZED) Gold Certification awarded to Dev Press Tools for excellence in zero defect, zero effect manufacturing practices. This certificate recognizes the company's commitment to quality, sustainability, and best practices in manufacturing.",
+      benefits: [
+        "Certified under MSME Sustainable (ZED) Certification Scheme",
+        "Recognition for zero defect, zero effect manufacturing",
+        "Valid for three years from date of issue",
+        "Assessed by Quality Austria Central Asia Private Limited"
+      ],
+      certificateNumber: "16102025_278194",
+      unitAddress: "Flat No:- S.N.177/1/2, Building:- Avinash Nagar, Plot No.50, Road/Street:- Near Saibaba Export, Village/Town:- Solapur, City:- Solapur, MAHARASHTRA-413006",
+      code: "UDYAM-MH-32-0029844",
+      assessmentAgency: "Quality Austria Central Asia Private Limited",
+      
+    },
+    {
+      
       name: "ISO 9001:2015",
       type: "Quality Management System",
       issuedBy: "International Organization for Standardization",
@@ -29,7 +47,8 @@ const Certifications = () => {
         "Energy efficient manufacturing"
       ],
       certificateNumber: "ZED-BRZ-2024-MH-DPT-142"
-    }
+    },
+    
   ];
 
   const qualityStandards = [
@@ -169,6 +188,13 @@ const Certifications = () => {
                         <img
                           src="/msmecertificate.png"
                           alt="MSME ZED Bronze Certificate"
+                          className="max-h-[22rem] max-w-full w-auto h-auto object-contain rounded shadow-lg border"
+                        />
+                      )}
+                      {cert.name === "MSME ZED Gold" && (
+                        <img
+                          src="/MSME ZED Gold Certificate.jpg"
+                          alt="MSME ZED Gold Certificate"
                           className="max-h-[22rem] max-w-full w-auto h-auto object-contain rounded shadow-lg border"
                         />
                       )}
