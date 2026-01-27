@@ -28,6 +28,13 @@ const Contact = () => {
       description: "Overall business strategy and operations"
     },
     {
+      name: "Mrs. Pooja H. Guntuk",
+      position: "Marketing Head",
+      phone: "09421026482",
+      email: "devpresstools@gmail.com",
+      description: "Planning and executing marketing strategies"
+    },
+    {
       name: "Mr. Rakesh R Yannam",
       position: "General Manager",
       phone: "09421026482",
