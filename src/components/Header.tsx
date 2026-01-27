@@ -46,7 +46,7 @@ const Header = () => {
             </div>
           </div>
           <div className="hidden lg:block">
-            <span className="text-xs sm:text-sm">ISO 9001 Certified | MSME ZED Bronze</span>
+            <span className="text-xs sm:text-sm">ISO 9001 Certified | MSME ZED Gold</span>
           </div>
         </div>
       </div>
