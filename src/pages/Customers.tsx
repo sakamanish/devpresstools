@@ -51,6 +51,18 @@ const Customers = () => {
       logo: "/Lumina Enterprises.png"
     },
     {
+      name: "Cooper Corporation Pvt Ltd",
+      sector: "Automotive",
+      description: "Precision components and assemblies for mobility applications",
+      logo: "/update 2/Cooper Corporation Pvt Ltd Logo.jpg"
+    },
+    {
+      name: "MSL Driveline System LTD",
+      sector: "Industrial",
+      description: "Driveline systems and transmission solutions",
+      logo: "/update 2/MSL Driveline System LTD Logo.png"
+    },
+    {
       name: "Artfab",
       sector: "Engineering",
       description: "Innovative solutions for industrial fabrics",

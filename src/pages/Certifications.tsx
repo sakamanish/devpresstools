@@ -179,7 +179,7 @@ const Certifications = () => {
                       {/* Certificate Image Preview */}
                       {cert.name === "ISO 9001:2015" && (
                         <img
-                          src="/isocertificate.png"
+                          src="/update 2/new iso 9001 certificate.png"
                           alt="ISO 9001:2015 Certificate"
                           className="max-h-[22rem] max-w-full w-auto h-auto object-contain rounded shadow-lg border"
                         />

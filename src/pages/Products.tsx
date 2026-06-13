@@ -100,6 +100,20 @@ const Products = () => {
         "Long service life"
       ],
       image: "/Gaskets.jpeg"
+    },
+    {
+      category: "Seals, Nano Seals & Welch Plugs",
+      description: "Advanced sealing solutions including nano seals and Welch plugs for precision industrial applications.",
+      applications: ["Hydraulics", "Pneumatics", "Instrumentation", "Automotive"],
+      sizes: "Custom sizes and formats",
+      materials: ["NBR", "Viton", "PTFE", "Silicone"],
+      features: [
+        "High-precision leak prevention",
+        "Wide temperature compatibility",
+        "Custom engineered profiles",
+        "Durable long-life performance"
+      ],
+      image: "/update 2/Seal, Nano Seal, Welch Plug etc 2.jpg"
     }
   ];
 
