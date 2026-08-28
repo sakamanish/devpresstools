@@ -135,7 +135,7 @@ const Footer = () => {
             <span>
               Developed and maintained by{' '}
                 <a
-                  href="https://reachmanish.netlify.app"
+                  href="https://sakamanish.me/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-accent transition-colors"
