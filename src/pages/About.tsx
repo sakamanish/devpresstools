@@ -1,13 +1,40 @@
-import { Award, Target, Users, Leaf, TrendingUp, Factory } from 'lucide-react';
+import { Award, Users, Leaf, TrendingUp, UserRound } from 'lucide-react';
 
 const About = () => {
   const milestones = [
-    { year: "2008", event: "Dev Press Tools established in Solapur, Maharashtra" },
-    { year: "2012", event: "First major contract with automotive industry" },
-    { year: "2016", event: "ISO 9001 certification achieved" },
-    { year: "2019", event: "Expanded manufacturing facility with advanced machinery" },
-    { year: "2022", event: "MSME ZED Bronze certification received" },
-    { year: "2024", event: "500+ satisfied customers milestone reached" },
+    { year: "2017", event: "Dev Press Tools started with metal shell manufacturing." },
+    { year: "2018", event: "Welcomed our first customer and began supplying them." },
+    { year: "2019", event: "Purchased a new molding machine with a rubber mixing unit." },
+    { year: "2020", event: "Started rubber-moulded bonded seal production mid-year and introduced our first aftermarket part by year-end." },
+    { year: "2021", event: "Management decided to pursue certification and make the company system-oriented." },
+    { year: "2022", event: "Successfully obtained ISO 9001 certification from TÜV SÜD and MSME UDYAM registration." },
+    { year: "2023", event: "Added a new automotive customer." },
+    { year: "2024", event: "Learned a major lesson in the industrial sector." },
+    { year: "2025", event: "Added an OEM customer." },
+    { year: "2025", event: "Achieved MSME ZED Bronze certification, followed by MSME ZED Gold certification within six months." },
+  ];
+
+  const managementTeam = [
+    {
+      name: "Mr. Rakesh Ramesh Yannam",
+      role: "General Manager / Plant Head",
+      details: [
+        "Experienced business leader responsible for marketing strategy, customer relationship management, business development, market expansion, new customer acquisition, sales growth, and strengthening long-term relationships with OEMs and key customers.",
+        "Experienced manufacturing leader responsible for overall plant operations, production, quality, maintenance, productivity, cost optimisation, and continuous improvement, ensuring efficient and timely delivery of customer requirements.",
+      ],
+    },
+    {
+      name: "Mr. Satish C Changle",
+      role: "Quality Head",
+      quote: "Quality is not just a responsibility; it is a commitment to our customers and a foundation for our long-term success.",
+    },
+    {
+      name: "Mrs. Pooja Harish Guntuk",
+      role: "Marketing Head",
+      details: [
+        "With a strong vision for business growth and customer relationships, our Marketing Head has played an important role in shaping the company’s journey and expanding its presence across diverse markets. Through a customer-focused approach, strategic planning, and continuous market development, the Marketing Head has contributed significantly to building long-term partnerships and strengthening the company’s reputation.",
+      ],
+    },
   ];
 
   const values = [
@@ -48,7 +75,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Company Story */}
+      {/* Company Story, intentionally hidden as requested.
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -69,7 +96,7 @@ const About = () => {
                   has earned us the trust of customers across various industries.
                 </p>
                 <p>
-                  Today, with our ISO 9001 certification and MSME ZED Bronze recognition, 
+                  Today, with our ISO 9001 certification and MSME ZED Gold recognition,
                   we continue to push the boundaries of manufacturing excellence while 
                   maintaining our core values of quality, integrity, and customer satisfaction.
                 </p>
@@ -77,7 +104,6 @@ const About = () => {
             </div>
             <div className="slide-in-right">
               <div className="card-industrial">
-                <Factory className="h-16 w-16 text-primary mb-6" />
                 <h3 className="text-2xl font-semibold text-foreground mb-4">Manufacturing Excellence</h3>
                 <p className="text-muted-foreground mb-6">
                   State-of-the-art facility equipped with advanced pressing machines, 
@@ -95,6 +121,36 @@ const About = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      */}
+
+      {/* Company History */}
+      <section className="py-20 bg-gradient-to-br from-muted/50 to-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="section-header fade-in">Our History</h2>
+            <p className="section-subtitle fade-in fade-in-delay-1">
+              Transforming continually — milestones, achievements, and defining moments of our journey.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-8">
+              {milestones.map((milestone, index) => (
+                <div key={`${milestone.year}-${index}`} className="flex items-start gap-4 sm:gap-6 fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center shadow-elegant">
+                      <span className="text-primary-foreground font-bold">{milestone.year}</span>
+                    </div>
+                  </div>
+                  <div className="card-industrial flex-1">
+                    <p className="text-foreground font-medium">{milestone.event}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -134,6 +190,49 @@ const About = () => {
         </div>
       </section>
 
+      {/* Management Team */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="section-header fade-in">Management Team</h2>
+            <p className="section-subtitle fade-in fade-in-delay-1">
+              Meet the leaders guiding our operations, quality, and customer relationships.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {managementTeam.map((member, index) => (
+              <article
+                key={member.name}
+                className="card-feature fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div
+                  role="img"
+                  aria-label={`Photo placeholder for ${member.name}`}
+                  className="w-full aspect-[4/3] rounded-lg border-2 border-dashed border-primary/30 bg-muted/70 flex flex-col items-center justify-center gap-3 mb-6 text-muted-foreground"
+                >
+                  <UserRound className="h-12 w-12 text-primary/60" aria-hidden="true" />
+                  <span className="text-sm font-medium">Headshot photo</span>
+                </div>
+                <p className="text-sm font-semibold uppercase tracking-wider text-primary mb-2">{member.role}</p>
+                <h3 className="text-xl font-bold text-foreground mb-4">{member.name}</h3>
+                {member.details?.map((detail) => (
+                  <p key={detail} className="text-muted-foreground leading-relaxed mb-4 last:mb-0">
+                    {detail}
+                  </p>
+                ))}
+                {member.quote && (
+                  <blockquote className="text-muted-foreground italic leading-relaxed border-l-4 border-primary/30 pl-4">
+                    “{member.quote}”
+                  </blockquote>
+                )}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Company Values */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -156,35 +255,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      {/* <section className="py-20 bg-gradient-to-br from-muted/50 to-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="section-header fade-in">Our Journey Through Time</h2>
-            <p className="section-subtitle fade-in fade-in-delay-1">
-              Key milestones that shaped Dev Press Tools into what we are today
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
-              {milestones.map((milestone, index) => (
-                <div key={index} className="flex items-center space-x-6 fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center">
-                      <span className="text-primary-foreground font-bold">{milestone.year}</span>
-                    </div>
-                  </div>
-                  <div className="card-industrial flex-1">
-                    <p className="text-foreground font-medium">{milestone.event}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* Sustainability Goals */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
@@ -195,7 +265,7 @@ const About = () => {
             <p className="text-xl text-primary-foreground/90 mb-8 fade-in fade-in-delay-1 leading-relaxed">
               As a responsible manufacturer, we are committed to sustainable practices 
               that minimize our environmental impact while maximizing efficiency. Our 
-              MSME ZED Bronze certification reflects our dedication to zero waste, 
+              MSME ZED Gold certification reflects our dedication to zero waste,
               zero pollution, and zero defect manufacturing processes.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
