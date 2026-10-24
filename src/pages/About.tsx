@@ -1,4 +1,4 @@
-import { Award, Users, Leaf, TrendingUp, UserRound } from 'lucide-react';
+import { Award, Users, Leaf, TrendingUp } from 'lucide-react';
 
 const About = () => {
   const milestones = [
@@ -18,6 +18,7 @@ const About = () => {
     {
       name: "Mr. Rakesh Ramesh Yannam",
       role: "General Manager / Plant Head",
+      image: "/rakesh%20yannam.jpeg",
       details: [
         "Experienced business leader responsible for marketing strategy, customer relationship management, business development, market expansion, new customer acquisition, sales growth, and strengthening long-term relationships with OEMs and key customers.",
         "Experienced manufacturing leader responsible for overall plant operations, production, quality, maintenance, productivity, cost optimisation, and continuous improvement, ensuring efficient and timely delivery of customer requirements.",
@@ -26,11 +27,13 @@ const About = () => {
     {
       name: "Mr. Satish C Changle",
       role: "Quality Head",
+      image: "/satish%20c%20changle.jpeg",
       quote: "Quality is not just a responsibility; it is a commitment to our customers and a foundation for our long-term success.",
     },
     {
       name: "Mrs. Pooja Harish Guntuk",
       role: "Marketing Head",
+      image: "/pooja%20harish%20guntak.jpeg",
       details: [
         "With a strong vision for business growth and customer relationships, our Marketing Head has played an important role in shaping the company’s journey and expanding its presence across diverse markets. Through a customer-focused approach, strategic planning, and continuous market development, the Marketing Head has contributed significantly to building long-term partnerships and strengthening the company’s reputation.",
       ],
@@ -159,31 +162,29 @@ const About = () => {
       {/* Director's Message */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="card-feature text-center">
-              <div className="w-32 h-32 bg-gradient-primary rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
-                <img
-                  src="/directorimage.png"
-                  alt="Director Harish V. Guntuk"
-                  className="w-full h-full object-cover rounded-full border-4 border-primary shadow-lg"
-                />
-              </div>
-              <h2 className="text-3xl font-bold text-foreground mb-4">Director's Message</h2>
-              <div className="text-xl text-muted-foreground italic mb-6 leading-relaxed">
-                "As the founder of our esteemed manufacturing
-                  company, I am proud to say that we have always
-                  been committed to providing our customers with the
-                  highest quality rubber products across a variety of
-                  industries. From automotive to non-automotive,
-                  agriculture, and more, we have consistently strived to
-                  achieve universally acceptable standards of
-                  excellence in everything we do."
-              </div>
-              <div className="text-lg font-semibold text-foreground">
-                - Mr. Harish V. Guntuk
-              </div>
-              <div className="text-muted-foreground">
-                Director, Dev Press Tools
+          <div className="max-w-5xl mx-auto">
+            <div className="card-feature p-8 md:p-10">
+              <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-10">
+                <div className="w-52 h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 flex-shrink-0 rounded-full border-4 border-primary bg-gradient-primary p-1 shadow-lg">
+                  <img
+                    src="/directorimage.png"
+                    alt="Director Harish V. Guntuk"
+                    className="w-full h-full rounded-full object-cover object-center bg-white"
+                  />
+                </div>
+
+                <div className="flex-1 text-center lg:text-left">
+                  <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Director's Message</h2>
+                  <div className="text-lg md:text-2xl text-muted-foreground italic leading-relaxed mb-6">
+                    "As the founder of our esteemed manufacturing company, I am proud to say that we have always been committed to providing our customers with the highest quality rubber products across a variety of industries. From automotive to non-automotive, agriculture, and more, we have consistently strived to achieve universally acceptable standards of excellence in everything we do."
+                  </div>
+                  <div className="text-lg font-semibold text-foreground">
+                    - Mr. Harish V. Guntuk
+                  </div>
+                  <div className="text-muted-foreground">
+                    Director, Dev Press Tools
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -207,13 +208,12 @@ const About = () => {
                 className="card-feature fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div
-                  role="img"
-                  aria-label={`Photo placeholder for ${member.name}`}
-                  className="w-full aspect-[4/3] rounded-lg border-2 border-dashed border-primary/30 bg-muted/70 flex flex-col items-center justify-center gap-3 mb-6 text-muted-foreground"
-                >
-                  <UserRound className="h-12 w-12 text-primary/60" aria-hidden="true" />
-                  <span className="text-sm font-medium">Headshot photo</span>
+                <div className="mb-6 overflow-hidden rounded-lg border border-primary/10 bg-white p-2">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full aspect-[4/3] object-contain object-center rounded-md bg-white"
+                  />
                 </div>
                 <p className="text-sm font-semibold uppercase tracking-wider text-primary mb-2">{member.role}</p>
                 <h3 className="text-xl font-bold text-foreground mb-4">{member.name}</h3>
