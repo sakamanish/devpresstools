@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, User, MessageSquare } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, MessageSquare } from 'lucide-react';
 import { toast } from 'sonner';
 import emailjs from '@emailjs/browser';
 
@@ -23,6 +23,7 @@ const Contact = () => {
     {
       name: "Mr. Harish V. Guntuk",
       position: "Managing Director",
+      image: "/directorimage.png",
       phone: "09923990111",
       email: "devpresstools@gmail.com",
       description: "Overall business strategy and operations"
@@ -30,6 +31,7 @@ const Contact = () => {
     {
       name: "Mrs. Pooja H. Guntuk",
       position: "Marketing Head",
+      image: "/pooja%20harish%20guntak.jpeg",
       phone: "09421026482",
       email: "devpresstools@gmail.com",
       description: "Planning and executing marketing strategies"
@@ -37,6 +39,7 @@ const Contact = () => {
     {
       name: "Mr. Rakesh R Yannam",
       position: "General Manager",
+      image: "/rakesh%20yannam.jpeg",
       phone: "09421026482",
       email: "devpresstools@gmail.com",
       description: "General management and administration"
@@ -44,6 +47,7 @@ const Contact = () => {
     {
       name: "Mr. Satish C Changle",
       position: "Quality & Rubber Technician",
+      image: "/satish%20c%20changle.jpeg",
       phone: "09665389222",
       email: "devpresstools@gmail.com",
       description: "Quality control and rubber technology"
@@ -352,11 +356,15 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="card-feature text-center fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <User className="h-12 w-12 text-primary-foreground" />
+                <div className="w-28 h-36 overflow-hidden rounded-lg border border-primary/10 bg-white mx-auto mb-6 shadow-sm">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">{member.name}</h3>
                 <p className="text-accent font-medium mb-4">{member.position}</p>

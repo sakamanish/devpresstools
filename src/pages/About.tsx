@@ -165,11 +165,11 @@ const About = () => {
           <div className="max-w-5xl mx-auto">
             <div className="card-feature p-8 md:p-10">
               <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-10">
-                <div className="w-52 h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 flex-shrink-0 rounded-full border-4 border-primary bg-gradient-primary p-1 shadow-lg">
+                <div className="w-52 h-72 md:w-64 md:h-80 lg:w-72 lg:h-96 flex-shrink-0 rounded-xl border-4 border-primary bg-gradient-primary p-1 shadow-lg">
                   <img
                     src="/directorimage.png"
                     alt="Director Harish V. Guntuk"
-                    className="w-full h-full rounded-full object-cover object-center bg-white"
+                    className="w-full h-full rounded-lg object-cover object-center bg-white"
                   />
                 </div>
 
